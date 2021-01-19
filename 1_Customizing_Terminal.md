@@ -4,7 +4,7 @@
 - [iTerm2](#Install-iTerm2)
 - [Oh My Zsh](#install-oh-my-zsh)
 - [Intro to vim](#Brief-intro-to-vim)
-- [AutoSuggestions & Syntax highlighting](#set-up-autosuggestions--syntax-highlighting)
+- [Auto-suggestions & Syntax highlighting](#Set-Up-Auto-suggestions-&-Syntax-highlighting)
 - [Select Your Theme](#select-your-theme)
 - [Starship Theme](#install-starship-theme)
 
@@ -63,7 +63,7 @@ If you want to learn more about Vim you can use the command `vimtutor` to start 
 
 
 
-## Set Up Auto-Suggestions & Syntax Highlighting
+## #Set Up Auto-suggestions & Syntax highlighting)
 
 A. Auto-suggestion allows you to save time typing repeated commands, by suggesting strings from your history that you can select by just using the right arrow and tab keys in sequence.  To install it, paste the following line at the terminal prompt:
 
