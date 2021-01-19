@@ -114,7 +114,7 @@ to
 ZSH_THEME="cloud"
 ```
 
-# Install [Starship Theme](https://starship.rs/)
+## Install [Starship Theme](https://starship.rs/)
 
 There is a plethora of different Terminal themes. Depending on the tasks you are doing some themes are better suited than others. For our purpose the starship theme is a good choice. 
 
