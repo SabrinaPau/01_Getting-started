@@ -6,7 +6,7 @@ If you don't want to type your password every time you want to interact with git
 
 ## Create private and public ssh-key
 
-Let's start by creating a new SSH key on your machine. Open the Terminal and copy and paste the following command: 
+Let's start by creating a new SSH key on your machine. Open the Terminal and copy and paste the following command. It will ask you to enter several things but you can just leave it blank and click enter several times. 
 
 ```
 $ ssh-keygen
@@ -26,3 +26,4 @@ Go on GitHub and click in the upper right corner on your profile. Then go to **s
 
 You can find the GitHub documentation on that topic [here](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
+If you want to test your SSH connection you will finde the instructions [here](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection).

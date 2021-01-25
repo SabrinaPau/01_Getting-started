@@ -21,6 +21,12 @@ $ brew update
 $ brew install pyenv
 ```
 
+After you installed pyenv you need to add another line to the .zshrc file. Open the file and add the second line: 
+
+```
+$ vim ~/.zshrc
+$ eval "$(pyenv init -)"
+```
 
 There are several advantages for using a tool like pyenv. It allows you to easily download or switch between Python versions with a single command. You can also set the Python version of your choice as the global one. 
 It even makes it possible to switch Python versions by changing the directory. This proves to be particularly useful when you have different directories for projects which require different versions of Python. 

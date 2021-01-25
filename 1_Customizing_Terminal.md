@@ -11,6 +11,7 @@
 Life can be easier if you become accustomed to using terminal. 
 By pimping your terminal, you boost the appearance and get cool features that make your work more efficient.
 
+> A brief **warning** before we start: The following instructions on how to uprade your terminal will require the installation of software, that doesn't work well with older verisons of macOS. We recommend to follow the instructions only when you are using macOS Catalina or higher.
 
 ## Install [Homebrew](https://brew.sh) 
 
@@ -19,7 +20,7 @@ Homebrew is a free and open-source package management system available for macOS
 * Paste the following (withouth the $ sign) at the Terminal prompt.
 
 ```sh
-  $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 If you're a Linux user you can also use homebrew. But if you are familiar with using another tool to manage your packages or run into an issue when using homebrew, feel free to use an alternative. Depending on your Linux distribution you can use e.g. `apt-get` instead of `brew`.
@@ -38,13 +39,10 @@ iTerm2, an alternative to the Terminal on Mac, is equipped with a bunch of nice 
 
 
 ## Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-Oh My Zsh allows you to customize the appearance of your terminal.
-
-* Install it by copy pasting each line to your Terminal:
+The newer versions of macOS ship with zsh pre-installed. You can see if you are using bash or zsh or something else in the header of your terminal window. If you are already using zsh you can skip the first of the following commands. The second command will install Oh My Zsh, which allows you to customize the appearance of your terminal in many different ways. 
 
 ```sh
-  $ brew install zsh
+  $ brew install zsh    # You can skip this one if you're already using zsh.
   $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -63,7 +61,7 @@ If you want to learn more about Vim you can use the command `vimtutor` to start 
 
 
 
-## #Set Up Auto-suggestions & Syntax highlighting)
+### Set Up Auto-suggestions & Syntax highlighting
 
 A. Auto-suggestion allows you to save time typing repeated commands, by suggesting strings from your history that you can select by just using the right arrow and tab keys in sequence.  To install it, paste the following line at the terminal prompt:
 
@@ -80,9 +78,9 @@ C. In order to activate both auto-suggestion and syntax highlighting you have to
 You can open the file with the following command:
 
 ```sh
-  $ ~/.zshrc
+  $ vim ~/.zshrc
 ```
-The (by default) vim editor will open and you can append the following lines at the end of the file. (Make sure that only the first line will start with an `#`. The other lines have to start directly with `source`.)
+The vim editor will open and you can append the following lines at the end of the file. (Make sure that only the first line will start with an `#`. The other lines have to start directly with `source`.)
 
 ```sh
 # additional zsh plugins 
