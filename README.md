@@ -6,5 +6,6 @@ Becoming a Data Scientist starts with setting up the right working environment. 
 
 This repo covers...
 * [Customizing your Terminal](1_Customizing_Terminal.md)
-* [Connect to Github using a ssh key](2_GitHub_SSH.md)
-* [Installing Python and Pyenv](3_Python_Pyenv.md)
+* [Connect to Github using a SSH key](2_GitHub_SSH.md)
+* [Installing Python and Pyenv](3_Python_Pyenv_Miniconda.md)
+* [Creating virtual environments](3_Python_Pyenv_Miniconda.md)
