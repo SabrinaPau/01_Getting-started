@@ -26,4 +26,4 @@ Go on GitHub and click in the upper right corner on your profile. Then go to **s
 
 You can find the GitHub documentation on that topic [here](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
-If you want to test your SSH connection you will finde the instructions [here](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection).
+If you want to test your SSH connection you will find the instructions [here](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection).
