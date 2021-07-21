@@ -5,7 +5,7 @@ def chunks(l, n):
     for i in range(0, len(l), n):
         yield l[i:i + n]
 
-n = ['constantin', 'dirk', 'gero', 'jenny', 'manuel', 'martin', 'pascal', 'paul']
+n = ['lea', 'christina', 'benedikt','christian', 'theresa', 'dominic', 'christoph', 'lily', 'till', 'fabian', 'wolfgang']
 
 random.shuffle(n)
 

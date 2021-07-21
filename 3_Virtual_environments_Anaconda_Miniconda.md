@@ -14,28 +14,27 @@ When working as a Data Analyst your projects will require more than only Python.
 A virtual environment is a self-contained directory tree containing a Python installation of the version of your choice and a number of additional packages, which are all isolated from other environments.  
 If you open the terminal and run the command `python --version` you will see that Python is already installed as part of the operating system. The default Python version installed on your Mac is 2.7.   
 However, since the world has moved on, Data Analytics nowadays usually require the use of Python 3 so that you need to specify a newer Python version within your virtual environment (for the bootcamp we will use Python 3.8.5.).  
-So each project you are working on should have its own virtual environment. Another advantage of using virtual environments is that if you want to share your project with someone else they can install an identical copy of your environment to make sure everything will work.   
+So each project you are working on should have its own virtual environment. Another advantage of using virtual environments is that if you want to share your project with someone else, they can install an identical copy of your environment to make sure everything will work.   
 
-There are different approaches on how to manage various virtual environments. We will introduce only way of creating those environments at this point.
+There are different approaches on how to manage various virtual environments. We will introduce only one way of creating those environments at this point.
 
 ### Creating virtual environments with miniconda
 
-Maybe you have heard of **Anaconda** a distribution of Python and R. We will not download the whole Anaconda distribution since it contains a lot of stuff we will not use, but we will download **Miniconda**, the slimmed-down distribution version of Anaconda:
+Maybe you have heard of **Anaconda**, a distribution of Python and R. We will not download the whole Anaconda distribution since it contains a lot of stuff we will not use. Instead, we will download **Miniconda**, the slimmed-down distribution version of Anaconda:
 
-1. Download installer [here](https://docs.conda.io/en/latest/miniconda.html) (Python 3.7 Mac OS X 64-bit .pkg installer)
-2. Once the download is complete, locate the installer file using Finder and run it
-3. In terminal:
+1. In terminal:
 ```BASH 
-$ bash Miniconda3-latest-MacOSX-x86_64.sh
+brew install --cask miniconda
 ```
-4. Follow the prompts on the installer screens
-5. Close and then re-open your terminal window
-6. For testing: 
+
+2. Close and then re-open your terminal window
+
+3. For testing: 
 ```BASH
 $ conda list
 ```
 
-You now have to options to create and install a new environment. You can either install it from an `environment.yml` file or step by step. At the beginning we will use a environment.yml file which contains a list of all the packages we want to install in a specific format. You can find the file called [nf_base_environment.yml](nf_base_environment.yml) in this repo.
+You now have two options to create and install a new environment. You can either install it from an `environment.yml` file or by installing single packages step by step. At the beginning we will use a environment.yml file which contains a list of all the packages we want to install in a specific format. You can find the file called [nf_base_environment.yml](nf_base_environment.yml) in this repo.
 
 
 1. Move to neuefische/getting-started repo

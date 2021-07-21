@@ -9,7 +9,8 @@
 - [Starship Theme](#install-starship-theme)
 
 Life can be easier if you become accustomed to using terminal. 
-By pimping your terminal, you boost the appearance and get cool features that make your work more efficient.
+By pimping your terminal, you boost the appearance and get cool features that make your work more efficient.  
+Please follow the steps below in the given order.
 
 > A brief **warning** before we start: The following instructions on how to uprade your terminal will require the installation of software, that doesn't work well with older verisons of macOS. We recommend to follow the instructions only when you are using macOS Catalina or higher.
 
@@ -49,7 +50,7 @@ The newer versions of macOS ship with zsh pre-installed. You can see if you are 
 
 ## Brief Intro to vim
 
-Before we will install cool plugins like auto-suggestion or syntax highlighting here is short introduction to Vim. Vim is a text editor you can use from a command-line interface and it is usually set as the default editor in the Terminal. So if you type a command that will in some way open an editor, it will usually open Vim. Since navigating through Vim is not intuitive, it is good to know some basics:
+Before we will install cool plugins like auto-suggestion or syntax highlighting, here is short introduction to Vim. Vim is a text editor you can use from a command-line interface and it is usually set as the default editor in the Terminal. So if you type a command that will in some way open an editor, it will usually open Vim. Since navigating through Vim is not intuitive, it is good to know some basics:
 
 * Moving inside the editor works with the arrow keys. 
 * Vim has different modes:
@@ -80,7 +81,7 @@ You can open the file with the following command:
 ```sh
   $ vim ~/.zshrc
 ```
-The vim editor will open and you can append the following lines at the end of the file. (Make sure that only the first line will start with an `#`. The other lines have to start directly with `source`.)
+The vim editor will open and you can append the following lines at the end of the file. (Make sure that only the first line will start with an `#`. With a `#`, you comment out the following sentence in the same line. The other lines have to start directly with `source`.)
 
 ```sh
 # additional zsh plugins 

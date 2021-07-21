@@ -1,10 +1,10 @@
-# Creating an envrionment: conda env create --file nf_base_environment.yml
+# Creating an environment: conda env create --file nf_base_environment.yml
 # Updating an environment: conda env update --file nf_base_environment.yml
 name: nf_base
 dependencies:
   - python=3.8.5
   - pip
-  - jupyterlab
+  #- jupyterlab
   - matplotlib
   - numpy
   - pandas
