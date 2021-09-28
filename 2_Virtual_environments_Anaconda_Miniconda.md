@@ -1,9 +1,5 @@
 # Virtual environments, Anaconda and Miniconda
 
-- [Virtual environments](#Virtual-environment)
-- [Creating virtual environments with miniconda](#Creating-virtual-environments-with-miniconda)
-
-
 ## Virtual environments
 
 When working as a Data Analyst your projects will require more than only Python. Most of the time it will also involve a bunch of different packages and modules, which exist in different versions as well. You might work on project A which uses version 1.0 of a particular package and on the same time on project B which requires version 2.0 of the same package. The solution for avoiding a conflict and fulfilling both requirements is using virtual environments. It basically works like a magician pulling a rabbit out of a hat. When you no longer need the virtual environment - your rabbit - you put it back into the hat and conjure up a new, different environment.
@@ -20,11 +16,11 @@ There are different approaches on how to manage various virtual environments. We
 
 ### Creating virtual environments with miniconda
 
-Maybe you have heard of **Anaconda**, a distribution of Python and R. We will not download the whole Anaconda distribution since it contains a lot of stuff we will not use. Instead, we will download **Miniconda**, the slimmed-down distribution version of Anaconda:
+Maybe you have heard of **Anaconda**, a distribution of Python and R. We will not download the whole Anaconda distribution since it contains a lot of stuff we will not use. Instead, we will download **Miniconda**, the slimmed-down distribution version of Anaconda. Follow the steps in your terminal (without the $-signs):
 
 1. In terminal:
 ```BASH 
-brew install --cask miniconda
+$ brew install --cask miniconda
 ```
 
 2. Close and then re-open your terminal window
@@ -34,25 +30,9 @@ brew install --cask miniconda
 $ conda list
 ```
 
-You now have two options to create and install a new environment. You can either install it from an `environment.yml` file or by installing single packages step by step. At the beginning we will use a environment.yml file which contains a list of all the packages we want to install in a specific format. You can find the file called [nf_base_environment.yml](nf_base_environment.yml) in this repo.
+You now have two options to create and install a new environment. You can either install it from an `environment.yml` file or by installing single packages step by step. Since we want you to be able to set up your own environment in the future, you should create the base environment for our bootcamp from scratch. 
 
-
-1. Move to neuefische/getting-started repo
-2. ls (list files) and it should show nf_base_environment.yml
-3. Now on terminal window type: 
-```BASH 
-$ conda env create --file nf_base_environment.yml
- ```
-4. In order to activate or deactivate the virtual environment run:
-```BASH 
-$ conda activate nf_base
-$ conda deactivate
-```
-While the environment is active you should see the name of the environment (nf_base) in your terminal. 
-
-
-In order to create an environment from scratch you can use this workflow:
-
+In order to create an environment from scratch you can use this general workflow:
 ```BASH 
 # Create new environment
 $ conda create --name <env_name>
@@ -63,3 +43,40 @@ $ conda install <package_name>
 # Deactivate environment
 $ conda deactivate 
 ```
+Let's create a base environment called *nf_base* with specific packages by running the following lines of code in your terminal:
+
+
+```BASH 
+# Create new environment called nf_base with Python version 3.8.5
+$ conda create --name nf_base python=3.8.5
+# Activate nf_base environment 
+$ conda activate nf_base
+# Installing packages inside nf_base environment
+$ conda install pip
+$ conda install matplotlib
+$ conda install numpy
+$ conda install pandas
+$ conda install scipy
+$ conda install seaborn
+$ conda install statsmodels
+$ conda install scikit-learn
+```
+In order to activate or deactivate virtual environments run:
+```BASH 
+$ conda activate nf_base
+$ conda deactivate
+```
+While the nf_base environment is active you should see the name of the environment (nf_base) in your terminal. 
+
+You can export your environment to a YAML file, which other programmers can use to install the same environment. Let's do that now! With your conda environment activated, run the following command: 
+```BASH 
+$ conda env export > nf_base_environment.yml
+```
+This YAML file contains a list of the dependencies needed to be installed for a certain project. For installing an environment from a yml file, you need the following command in the future (you don't need to do this now, since you have already created your environment):
+
+```BASH 
+$ conda env create --file environment.yml
+ ```
+
+
+
