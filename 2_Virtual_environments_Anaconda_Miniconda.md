@@ -60,6 +60,7 @@ $ conda install scipy
 $ conda install seaborn
 $ conda install statsmodels
 $ conda install scikit-learn
+$ conda install nb_conda_kernels
 ```
 In order to activate or deactivate virtual environments run:
 ```BASH 
