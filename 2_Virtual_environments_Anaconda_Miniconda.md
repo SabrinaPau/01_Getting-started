@@ -47,8 +47,8 @@ Let's create a base environment called *nf_base* with specific packages by runni
 
 
 ```BASH 
-# Create new environment called nf_base with Python version 3.8.5
-$ conda create --name nf_base python=3.8.5
+# Create new environment called nf_base with Python version 3.9
+$ conda create --name nf_base python=3.9
 # Activate nf_base environment 
 $ conda activate nf_base
 # Installing packages inside nf_base environment
@@ -60,7 +60,7 @@ $ conda install scipy
 $ conda install seaborn
 $ conda install statsmodels
 $ conda install scikit-learn
-$ conda install nb_conda_kernels
+$ conda install nb_conda
 ```
 In order to activate or deactivate virtual environments run:
 ```BASH 
