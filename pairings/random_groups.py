@@ -1,13 +1,21 @@
 import random
+import sys
 
-def chunks(l, n):
-    """Yield successive n-sized chunks from l."""
-    for i in range(0, len(l), n):
-        yield l[i:i + n]
+# Pairing script for creating groups
+# Usage in command line: "python random_groups.py [group size]"
 
-n = ['Tobias', 'Jakob', 'Dexter', 'Philipp', 'Pascal', 'Evans', 'Alexander', 'Andrè', 'Jan', 'Patrick', 'Jayaprakash', 'Carolin', 'Victor', 
-     'Andreas', 'Zuzanna', 'Maximilian']
 
-random.shuffle(n)
+# students = ['Name1', 'Name2', 'Name3', 'Name4', 'Name5', 'Name6', 'Name7', 'Name8', 'Name9', 'Name10']
+students = ['Aline', 'Andrew', 'Damjan', 'Doro', 'Duc', 'Erik', 'Friedrich', 'Maria', 'Mark', 'Raul', 'Sebastian', 'Torben', 'Victor', 'Wolfram']
+group_size = int(sys.argv[1])
+number_of_groups = int(len(students)/group_size)
+    
+random.shuffle(students)
 
-print(list(chunks(n, 2)))
+all_groups = []
+for index in range(number_of_groups):
+    group = students[index::number_of_groups]
+    all_groups.append(group)
+    
+for index, group in enumerate(all_groups):
+    print(f"Room {index+1}: {' / '.join(group)}") #\n")
