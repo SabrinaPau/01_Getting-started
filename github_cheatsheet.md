@@ -66,15 +66,15 @@
 ## Setting up GitHub for a new Project
 
 
-#### Steps needs to be done
-##### README.md
-    ###### contains description of the repo
-    ###### automatically displayed on the front page of the repo
-##### add gitignore
-    ###### for folders and files which should be excluded from being uploaded to github
-    ###### at least exclude /data folder and credentials information like API keys 
+#### Steps needs to be done:
+##### Create README.md
+* contains description of the repo
+* automatically displayed on the front page of the repo
+##### add gitignore file
+* for folders and files which should be excluded from being uploaded to github
+* exclude /data folder and credentials information like API keys, confidential data, etc.
 ##### add licence
-    ###### MIT licence
+* MIT licence
     
 &nbsp;
 
