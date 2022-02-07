@@ -1,0 +1,95 @@
+## Interact with GitHub using VS Code
+
+##### show status of the local version of repository(main, branch)
+    git status
+##### add new file (all files with  '*') from your local version, so it can be synchronized with the github version of the repository
+    git add filname.py
+##### prepare the added files to be synchronized
+    git commit -m "commit message"
+##### prepare all updated files to be synchronized
+    git commit -a -m "commit message"
+##### the actual synchronization of the updated files
+    git push
+##### update the local version of the repository to the current state on github
+    git pull
+##### change to acertain branch of repository
+    git checkout <brach_name>
+##### synchonize the last version of a file from another branch while you are in the branch which is going to be changed
+    git checkout branch-name -- file-name
+##### create a clone of a github repo on your local machine
+    git clone <ssh url looking like that: https://github.com/userexample/example.git>
+##### reset my local files back to the last commit
+    git reset --hard HEAD
+##### discard any last added files or directories
+    git clean -df
+##### show last commits of the branch I am currently in
+    git log
+##### reset to certain hash(=certain old version of the repository)
+    git reset --hard <your commit hash key>
+##### update a certain local file from someone elses github repository
+    git fetch git@github
+    git checkout FETCH_HEAD -- <filename>
+
+&nbsp;
+
+&nbsp;
+ 
+## Workflow of pulling repo from another fork
+
+##### 1. using github in browser: merge a different repository with yours
+##### 2. using vs code: pull from your repository, which was updated in step 1
+
+##### information about the last changes
+    git remote -v
+
+&nbsp;
+
+&nbsp;
+
+## Workflow to keep updated github repositories of both DRIVER and NAVIGATOR working together
+
+##### DRIVER:
+    save the document you have been working on.
+    git add <file_name>
+    git commit -m "<your message>"
+    git push
+##### NAVIGATOR:
+    git fetch <clone link of the DRIVERS repo>
+    git checkout FETCH_HEAD <filename>
+    git commit -m "<your message>"
+    git push
+    
+&nbsp;
+
+&nbsp;
+
+## Setting up GitHub for a new Project
+
+
+#### Steps needs to be done
+##### README.md
+    ###### contains description of the repo
+    ###### automatically displayed on the front page of the repo
+##### add gitignore
+    ###### for folders and files which should be excluded from being uploaded to github
+    ###### at least exclude /data folder and credentials information like API keys 
+##### add licence
+    ###### MIT licence
+    
+&nbsp;
+
+&nbsp;
+
+## Connect VS Code with github to work on your repository locally with Windows 10
+
+
+##### create an ssh key in windows terminal
+    ssh-keygen
+##### copy key to paste in github settings
+##### 1. method: move into ssh folder
+    cd. ssh
+##### print ssh file to copy it (default name is id_rsa.pub)
+    cat id_rsa.pub
+##### 2. method: start Git(GUI) on windows and in help/Show SSH key open the key and copy
+##### copy the key and go to github Profile/Settings/SSH and GPG keys --> New SSH key
+
