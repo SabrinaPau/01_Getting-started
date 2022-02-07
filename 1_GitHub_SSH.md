@@ -6,19 +6,20 @@ If you don't want to type your password every time you want to interact with git
 
 ## Create private and public ssh-key
 
-Let's start by creating a new SSH key on your machine. Open the Terminal and copy and paste the following command. It will ask you to enter several things but you can just leave it blank and click enter several times. 
+Let's start by creating a new SSH key on your machine. Open the Terminal and run following command. It will ask you to enter several things but you should just *leave all prompts blank and just press **enter*** each time. 
 
 ```
 $ ssh-keygen
 ```
-This will create a hidden folder called **.ssh**. With the next two commands we will move into the folder and print the content of the **id_rsa.pub** file in the terminal. 
+Remember - just press *enter* at each prompt!
+
+This will create a hidden folder called **.ssh**. With the command we will copy the contents of the **id_rsa.pub** file into your clipboard. The vertical line in the text below is called a pipe, on a DE keyboard it is made by pressing *option+7*
 
 ```
-$ cd .ssh
-$ cat id_rsa.pub
+$ cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
-Now copy the whole part and log in on GitHub. 
+This copies key text to your clipboard. If you don't believe us, you can verify this by cmd+v to paste the text somewhere. 
 
 ## Adding key to GitHub
 
