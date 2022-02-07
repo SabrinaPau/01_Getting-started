@@ -2,10 +2,10 @@
 
 
 ##### create a clone of a github repo on your local machine
-    git clone <ssh url looking like that: https://github.com/userexample/example.git>
+    git clone <ssh url looking like that: git@github.com:userexample/example.git>
 ##### show status of the local version of repository(main, branch)
     git status
-##### stage new file (all files with  '*') from your local version, so it can be synchronized with the github version of the repository
+##### stage new file from your local version, so it can be synchronized with the github version of the repository
     git add filename.py
 ##### prepare the added files to be synchronized with a message explaininng the work
     git commit -m "commit message"
@@ -13,18 +13,20 @@
     git push
 ##### update the local version of the repository to the current state on github
     git pull
+##### change to a certain branch of repository    
+    git switch -c <branch_name>
 ##### change to a certain branch of repository
-    git switch <brach_name>
+    git switch <branch_name>
 ##### synchonize the last version of a file from another branch while you are in the branch which is going to be changed
     git checkout branch-name -- <file-name>
 ##### reset my local files back to the last commit
     git reset --hard HEAD
+##### show last commits of the branch you are currently in(hash of a certain commit is the cryptic string after "commit ") 
+    git log
 ##### reset to certain hash(=certain old version of the repository)
     git reset --hard <your commit hash key>
 ##### discard any last added files or directories
     git clean -df
-##### show last commits of the branch I am currently in
-    git log
 ##### update a certain local file from someone elses github repository
     git fetch git@github
     git checkout FETCH_HEAD -- <filename>
