@@ -30,6 +30,10 @@
 ##### update a certain local file from someone elses github repository
     git fetch git@github
     git checkout FETCH_HEAD -- <filename>
+##### check the origin repo of the local clone
+    git remote -v
+##### change the origin repo's url(in case you want to push local changes to another github repo)
+    git remote set-url origin <new.git.url/here>
 
 &nbsp;
 
