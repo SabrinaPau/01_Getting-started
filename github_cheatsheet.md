@@ -46,6 +46,10 @@
 
 ##### select and save the files from the upstream to your local machine. In the example we get the whole folder.
     git checkout <remotes/upstream/some_branch> /<folder_name>
+##### delete an origin branch
+    git branch -d <branch-name>
+##### delete a remote branch
+    git push --delete <remote name> <branch name>
 
 
 &nbsp;
