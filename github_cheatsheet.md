@@ -40,7 +40,8 @@
 
 ##### fetch data from that upstream
     git fetch upstream
-
+##### create a new branch in repo
+    git branch <branch_name>
 ##### show a list of all branches inside the upstream
     git branch -a
 
