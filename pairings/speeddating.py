@@ -7,7 +7,8 @@ import os
 random.seed(59)
 
 # This code finds speed dating pairings combinations by brute force.
-# Script takes list of names in a string cast as an argument
+# Script takes list of names in a string cast as second argument
+# and output option (list, 1 or overview, 2) as first argument
 # e.g.: python speeddating.py "['Sergio', 'Matthias', 'Andrew']"
 # Uneven lists do get a 'Joker' added
 
@@ -41,6 +42,7 @@ def is_pair_in(candidates, pairs):
             break
         else:
             found = False
+
     return found
 
 def gen_rounds(rounds, n_rounds, n_rooms, pairs):
@@ -88,7 +90,8 @@ def add_joker(items):
 if __name__ == "__main__":
 
     # assign script parameter as list
-    items = ast.literal_eval(sys.argv[1])
+    view = int(sys.argv[1])
+    items = ast.literal_eval(sys.argv[2])
 
     # append 'Joker' to list in case of uneven count of elements - to allow group building
     items = add_joker(items)
@@ -110,9 +113,17 @@ if __name__ == "__main__":
     os.system("clear")
 
     # final print of speed dating rounds
-    c = 1
-    print('Speed Dating Pairings:\n')
-    for round in rounds:
-        print(f'Round {str(c).zfill(2)}: ', round)
-        time.sleep(.15) # sleep for .15 seconds
-        c += 1
+    if view == 2:
+        c = 1
+        print('Speed Dating Pairings:\n')
+        for round in rounds:
+            print(f'Round {str(c).zfill(2)}: ', round)
+            time.sleep(.15) # sleep for .15 seconds
+            c += 1
+    elif view == 1:
+        for round in rounds:
+            for pair in round:
+                print(pair)
+            print('---')
+    else:
+        pass
