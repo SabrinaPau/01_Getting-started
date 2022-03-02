@@ -29,7 +29,10 @@
     git clean -df
 ##### update a certain local file from someone elses github repository
     git fetch git@github
-    git checkout FETCH_HEAD -- <filename>
+    git checkout FETCH_HEAD -- <file_name>
+###### or to get the whole folder
+    git checkout FETCH_HEAD -- <order_name/.>
+
 ##### check the origin repo of the local clone
     git remote -v
 ##### change the origin repo's url(in case you want to push local changes to another github repo)
