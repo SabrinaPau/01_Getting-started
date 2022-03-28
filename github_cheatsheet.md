@@ -29,7 +29,32 @@
     git clean -df
 ##### update a certain local file from someone elses github repository
     git fetch git@github
-    git checkout FETCH_HEAD -- <filename>
+    git checkout FETCH_HEAD -- <file_name>
+###### or to get the whole folder
+    git checkout FETCH_HEAD -- <order_name/.>
+
+##### check the origin repo of the local clone
+    git remote -v
+##### change the origin repo's url(in case you want to push local changes to another github repo)
+    git remote set-url origin <new.git.url/here>
+
+##### connect temporarily to another repo(called upstream) 
+    git remote add upstream <git@github.com:neuefische/example.git> 
+
+##### fetch data from that upstream
+    git fetch upstream
+##### create a new branch in repo
+    git branch <branch_name>
+##### show a list of all branches inside the upstream
+    git branch -a
+
+##### select and save the files from the upstream to your local machine. In the example we get the whole folder.
+    git checkout <remotes/upstream/some_branch> /<folder_name>
+##### delete an origin branch
+    git branch -d <branch-name>
+##### delete a remote branch
+    git push --delete <remote name> <branch name>
+
 
 &nbsp;
 
