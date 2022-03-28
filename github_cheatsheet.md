@@ -13,7 +13,7 @@
     git push
 ##### update the local version of the repository to the current state on github
     git pull
-##### change to a certain branch of repository    
+##### create a new branch in repository and change to this branch   
     git switch -c <branch_name>
 ##### change to a certain branch of repository
     git switch <branch_name>
