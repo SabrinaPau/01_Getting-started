@@ -4,9 +4,8 @@ import sys
 # Pairing script for creating groups
 # Usage in command line: "python random_groups.py [group size]"
 
-
 # students = ['Name1', 'Name2', 'Name3', 'Name4', 'Name5', 'Name6', 'Name7', 'Name8', 'Name9', 'Name10']
-students = ['Aline', 'Andrew', 'Damjan', 'Doro', 'Duc', 'Erik', 'Friedrich', 'Maria', 'Mark', 'Raul', 'Sebastian', 'Torben', 'Victor', 'Wolfram']
+students = ['Deming', 'Farnaz', 'Harish', 'Lina', 'Michael', 'Goldi', 'Rebecca', 'Sebastian', 'Sonia', 'Ulrich']
 group_size = int(sys.argv[1])
 number_of_groups = int(len(students)/group_size)
     
