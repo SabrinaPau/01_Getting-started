@@ -5,7 +5,7 @@ import sys
 # Usage in command line: "python random_groups.py [group size]"
 
 # students = ['Name1', 'Name2', 'Name3', 'Name4', 'Name5', 'Name6', 'Name7', 'Name8', 'Name9', 'Name10']
-students = ['Deming', 'Farnaz', 'Harish', 'Lina', 'Michael', 'Goldi', 'Rebecca', 'Sebastian', 'Sonia', 'Ulrich']
+students = ['Aida', 'Alexander', 'Christian', 'Christopher', 'Felix', 'Jane', 'Jannik', 'Kai', 'Kevin', 'Nina', 'Oliver', 'Salvatore', 'Ulla']
 group_size = int(sys.argv[1])
 number_of_groups = int(len(students)/group_size)
     
