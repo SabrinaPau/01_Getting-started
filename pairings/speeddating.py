@@ -9,7 +9,7 @@ random.seed(59)
 # This code finds speed dating pairings combinations by brute force.
 # Script takes list of names in a string cast as second argument
 # and output option (list, 1 or overview, 2) as first argument
-# e.g.: python speeddating.py "['Sergio', 'Matthias', 'Andrew']"
+# e.g.: $ python speeddating.py 2 "['Sergio', 'Matthias', 'Andrew']"
 # Uneven lists do get a 'Joker' added
 
 
