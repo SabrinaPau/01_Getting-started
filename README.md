@@ -1,4 +1,4 @@
-# 2022 - Getting Started with your Mac
+# 2022 - Getting Started Hacking with your Mac
 
 ![](https://imgs.xkcd.com/comics/python_environment.png)
 
