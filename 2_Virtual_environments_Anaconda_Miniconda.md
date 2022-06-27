@@ -22,6 +22,20 @@ Maybe you have heard of **Anaconda**, a distribution of Python and R. We will no
 ```BASH 
 $ brew install --cask miniconda
 ```
+1.1 initialise conda in your .zshrc file
+```BASH 
+conda init zsh 		
+```
+
+1.2 	loads the configuration from your .zshrc file
+```BASH 
+source ~/.zshrc 
+```
+
+1.3 	check conda is working
+```BASH 
+conda --version 
+```
 
 2. Close and then re-open your terminal window
 
