@@ -16,36 +16,8 @@ There are different approaches on how to manage various virtual environments. We
 
 ### Creating virtual environments with miniconda
 
-Maybe you have heard of **Anaconda**, a distribution of Python and R. We will not download the whole Anaconda distribution since it contains a lot of stuff we will not use. Instead, we will download **Miniconda**, the slimmed-down distribution version of Anaconda. Follow the steps in your terminal (without the $-signs):
-
-1. In terminal:
-```BASH 
-$ brew install --cask miniconda
-```
-1.1 initialise conda in your .zshrc file
-```BASH 
-conda init zsh 		
-```
-
-1.2 	loads the configuration from your .zshrc file
-```BASH 
-source ~/.zshrc 
-```
-
-1.3 	check conda is working
-```BASH 
-conda --version 
-```
-
-2. Close and then re-open your terminal window
-
-3. For testing: 
-```BASH
-$ conda list
-```
-
-You now have two options to create and install a new environment. You can either install it from an `environment.yml` file or by installing single packages step by step. Since we want you to be able to set up your own environment in the future, you should create the base environment for our bootcamp from scratch. 
-
+You have two options to create and install a new environment. You can either install it from an `environment.yml` file or by installing single packages step by step. Since we want you to be able to set up your own environment in the future, you should create the base environment for our bootcamp from scratch. 
+#### Option 1
 In order to create an environment from scratch you can use this general workflow:
 ```BASH 
 # Create new environment
@@ -57,8 +29,7 @@ $ conda install <package_name>
 # Deactivate environment
 $ conda deactivate 
 ```
-Let's create a base environment called *nf_base* with specific packages by running the following lines of code in your terminal:
-
+If you want to create a base environment called *nf_base* with specific packages for data analytics, run the following lines of code in your terminal:
 
 ```BASH 
 # Create new environment called nf_base with Python version 3.9
@@ -82,7 +53,7 @@ $ conda activate nf_base
 $ conda deactivate
 ```
 While the nf_base environment is active you should see the name of the environment (nf_base) in your terminal. 
-
+#### Option 2
 You can export your environment to a YAML file, which other programmers can use to install the same environment. Let's do that now! With your conda environment activated, run the following command: 
 ```BASH 
 $ conda env export > nf_base_environment.yml
